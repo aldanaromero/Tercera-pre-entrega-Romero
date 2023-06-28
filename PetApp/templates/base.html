@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Veterinaria Aldi</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="/appointment">Registrar un turno</a></li>
+            <li><a href="/search/user">Buscar turnos</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="hero">
+    <div class="container">
+        <h1>Veterinaria Aldi</h1>
+        <p>En esta página web podes reservar turnos para diferentes mascotas.</p>
+    </div>
+</section>
+
+<section class="hero">
+    <div class="content-dynamic">
+        {% block dynamicContent %}
+
+        {% endblock %}
+    </div>
+
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Veterinaria Aldi.</p>
+    </div>
+</footer>
+</body>
+</html>

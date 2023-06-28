@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block dynamicContent %}
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+    {% if form.errors %}
+
+    <p style="color: red;"> Están mal los datos, revisar</p>
+
+    {% endif %}
+    <form action="/search/" method="GET">{% csrf_token %}
+
+        <input type="text" name="pet_name" id="pet_name">
+        <input type="submit" value="Buscar">
+
+    </form>
+
+{% endblock %}

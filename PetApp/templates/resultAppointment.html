@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block dynamicContent %}
+
+
+
+    {% if pets %}
+        <p> Resultados de los estudios de la mascota llamada {{ pet_name }}</p>
+        <table>
+            <thead>
+            <tr>
+                <th>Nombre mascota</th>
+                <th>Edad</th>
+                <th>Tipo</th>
+                <th>Fecha de turno</th>
+                <th>Especialidad médica</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for pet in pets %}
+                <tr>
+                    <td>{{ pet.name }}</td>
+                    <td>{{ pet.age }}</td>
+                    <td>{{ pet.type }}</td>
+                    <td>{{ pet.pet_appointment.date }}</td>
+                    <td>{{ pet.pet_appointment.medical_specialty }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p> No hay mascotas disponibles </p>
+    {% endif %}
+
+
+
+{% endblock %}
