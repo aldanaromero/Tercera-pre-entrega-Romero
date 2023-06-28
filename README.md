@@ -5,9 +5,7 @@
 ## Proyecto
 Página web para reserva de turnos para Mascotas.
 
-## Casos de uso
-Para satisfacer los requerimientos de la entrega
-
+## Requerimientos
 - Link de GitHub con el proyecto totalmente subido a la plataforma.
 - Proyecto Web Django con patrón MVT que incluya:
   - **Herencia de HTML**: Se usa base.html como encabezado y footer de toda la página web y los formularios conforman el contenido dinámico.
@@ -20,7 +18,7 @@ Para satisfacer los requerimientos de la entrega
 
 Los usuarios pueden regisrar usuarios, mascotas, asignarse turnos y luego se puede buscar los turnos mediante el nombre de la mascota. 
 
-Se puede acceder a XX donde se explica y recorre la página web.
+Se puede acceder a [instrucciones](https://github.com/aldanaromero/petManager/blob/main/instructions.md) donde se explica y recorre la página web.
 
 
 
